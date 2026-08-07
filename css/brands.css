@@ -205,6 +205,12 @@
 	--button-background:#1DBF73;
 }
 
+/* FTCScout */
+.button-ftcscout {
+	--button-text:#ffffff;
+	--button-background:#FF6600;
+}
+
 /* Flickr */
 .button-flickr {
 	--button-text:#ffffff;
