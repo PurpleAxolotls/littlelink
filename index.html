@@ -1,113 +1,120 @@
 <!DOCTYPE html>
-
-<!--
-  To change the theme, change the class on the html tag below to one of:
-  - theme-auto: Automatically switches based on user's system preferences
-  - theme-light: Forces light theme
-  - theme-dark: Forces dark theme
--->
-
-<html class="theme-auto" lang="en"> <!-- Update `class="theme-auto"` with your preference -->
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Page Title - Change this to your name/brand (50-60 characters recommended) -->
     <title>Purple Axolotls</title>
-    <link rel="icon" type="image/png" href="images/avatar.png"> <!-- Update this with your own favicon -->
-
-    <!-- Meta Description - Write a description (150-160 characters recommended) -->
+    <link rel="icon" type="image/png" href="images/avatar.png">
     <meta name="description" content="Connect with the Purple Axolotls FTC robotics team on Instagram, or reach out to student or adult leadership.">
-
-    <!-- Canonical URL - Helps prevent duplicate content issues -->
-    <link rel="canonical" href="https://yourwebsite.com">
-
-    <!-- Author Information -->
+    <link rel="canonical" href="https://purpleaxolotls.com/">
     <meta name="author" content="Purple Axolotls">
+    <meta name="theme-color" content="#000046">
 
-    <!-- Browser UI Color - Matches the default light/dark theme backgrounds -->
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-
-    <!-- Social Sharing (Open Graph & Twitter) - Uncomment and fill in to control how your page
-         looks when shared on social platforms and in chat apps.
-         og:url and og:image must be full absolute URLs. -->
-    <!--
     <meta property="og:type" content="website">
     <meta property="og:title" content="Purple Axolotls">
-    <meta property="og:description" content="A short description of your page.">
-    <meta property="og:url" content="https://yourwebsite.com">
-    <meta property="og:image" content="https://yourwebsite.com/images/avatar@2x.png">
+    <meta property="og:description" content="Lincoln High School's FTC robotics team, number 18699. Join the team, follow us, or get in touch.">
+    <meta property="og:url" content="https://purpleaxolotls.com/">
+    <meta property="og:image" content="https://purpleaxolotls.com/images/avatar@2x.png">
     <meta name="twitter:card" content="summary">
-    -->
 
-    <!-- Font Preloads - Lets the browser fetch fonts in parallel with the stylesheets -->
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Same typefaces as join.purpleaxolotls.com -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Montserrat:wght@700;800&display=swap">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/brands.css">
-
-    <!-- LittleLink Extended Stylesheet (Optional) -->
-    <!-- <link rel="stylesheet" href="css/brands-extended.css"> -->
-    <!-- Learn more at https://github.com/sethcottle/littlelink-extended.
-         Remove comments if you've added LittleLink Extended dependencies -->
-
+    <!-- The Purple Axolotls design language. LittleLink's own reset.css, style.css
+         and brands.css are still in css/ but are not used by this page. -->
+    <link rel="stylesheet" href="css/axolotls.css">
   </head>
 
-<body>
+  <body>
 
-    <div class="container">
-        <div class="column">
-          <main>
+    <svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+    <defs>
+      <path id="gear-12" fill-rule="evenodd" d="M44.62 -5.87 L57.74 -5.46 L57.74 5.46 L44.62 5.87 L41.57 17.22 L52.74 24.14 L47.28 33.60 L35.70 27.39 L27.39 35.70 L33.60 47.28 L24.14 52.74 L17.22 41.57 L5.87 44.62 L5.46 57.74 L-5.46 57.74 L-5.87 44.62 L-17.22 41.57 L-24.14 52.74 L-33.60 47.28 L-27.39 35.70 L-35.70 27.39 L-47.28 33.60 L-52.74 24.14 L-41.57 17.22 L-44.62 5.87 L-57.74 5.46 L-57.74 -5.46 L-44.62 -5.87 L-41.57 -17.22 L-52.74 -24.14 L-47.28 -33.60 L-35.70 -27.39 L-27.39 -35.70 L-33.60 -47.28 L-24.14 -52.74 L-17.22 -41.57 L-5.87 -44.62 L-5.46 -57.74 L5.46 -57.74 L5.87 -44.62 L17.22 -41.57 L24.14 -52.74 L33.60 -47.28 L27.39 -35.70 L35.70 -27.39 L47.28 -33.60 L52.74 -24.14 L41.57 -17.22 Z M27.00 0 A27.00 27.00 0 1 0 -27.00 0 A27.00 27.00 0 1 0 27.00 0 Z"/>
+      <path id="gear-8" fill-rule="evenodd" d="M41.19 -8.19 L57.42 -8.17 L57.42 8.17 L41.19 8.19 L34.92 23.33 L46.38 34.82 L34.82 46.38 L23.33 34.92 L8.19 41.19 L8.17 57.42 L-8.17 57.42 L-8.19 41.19 L-23.33 34.92 L-34.82 46.38 L-46.38 34.82 L-34.92 23.33 L-41.19 8.19 L-57.42 8.17 L-57.42 -8.17 L-41.19 -8.19 L-34.92 -23.33 L-46.38 -34.82 L-34.82 -46.38 L-23.33 -34.92 L-8.19 -41.19 L-8.17 -57.42 L8.17 -57.42 L8.19 -41.19 L23.33 -34.92 L34.82 -46.38 L46.38 -34.82 L34.92 -23.33 Z M22.00 0 A22.00 22.00 0 1 0 -22.00 0 A22.00 22.00 0 1 0 22.00 0 Z"/>
+    </defs>
+  </svg>
 
-            <!--
-              By default, the Avatar is rounded. Use the following:
-              - avatar--rounded: Automatically rounds the image
-              - avatar--soft: Slightly rounds the image
-              - avatar--none: Removes any rounding
+    <header class="hero">
+      <svg class="hero__gears" viewBox="0 0 800 560" aria-hidden="true" focusable="false" preserveAspectRatio="xMaxYMid slice">
+        <g transform="translate(560 250) scale(2.3)"><use href="#gear-12" class="spin spin--cw gear--team"/></g>
+        <g transform="translate(246 392) scale(1.56)"><use href="#gear-8" class="spin spin--ccw gear--blue"/></g>
+        <g transform="translate(790 506) scale(1.56)"><use href="#gear-8" class="spin spin--ccw gear--red"/></g>
+      </svg>
+      <div class="wrap hero__in">
+        <img class="hero__logo" src="images/axolotl-logo.svg" alt="Purple Axolotls logo: a smiling axolotl in front of purple, blue and red gears" width="381" height="304" fetchpriority="high">
+        <p class="plate"><span>FTC</span><b>18699</b></p>
+        <h1>Purple <em>Axolotls</em></h1>
+        <p class="hero__lede">Lincoln High School FTC Robotics Team</p>
+      </div>
+    </header>
 
-              Be sure to replace the src with your own image path and update the alt text
-            -->
-            <img class="avatar avatar--rounded" src="images/avatar.png" srcset="images/avatar@2x.png 2x" alt="Purple Axolotls" width="128" height="128" fetchpriority="high">
+    <main class="wrap links">
 
-            <!-- Replace with your name or brand -->
-            <h1>Purple Axolotls</h1>
+      <!-- Join -->
+      <a class="feature" href="https://join.purpleaxolotls.com" target="_blank" rel="noopener">
+        <svg class="feature__gear" viewBox="-60 -60 120 120" aria-hidden="true" focusable="false"><use href="#gear-12" class="spin spin--cw"/></svg>
+        <span class="feature__text">
+          <b>Join the team</b>
+          <span>Meet the subteams, see the schedule and register. No tryouts, no experience needed.</span>
+        </span>
+        <span class="go" aria-hidden="true">→</span>
+      </a>
 
-            <!-- Add a short description about yourself or your brand -->
-            <p>Lincoln High School FTC Robotics Team</p>
-
-            <!-- All your buttons go here -->
-            <nav class="button-stack" aria-label="Links">
-
-              <!-- Join -->
-              <a class="button button-join" href="https://join.purpleaxolotls.com" target="_blank" rel="noopener"><img class="icon" src="images/joinsitelogo.svg" alt="Join Purple Axolotls"></a>
-
-              <!-- Instagram -->
-              <a class="button button-instagram" href="https://www.instagram.com/purpleaxolotls" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/instagram.svg" alt="Instagram Logo">Instagram</a>
-
-              <!-- GitHub -->
-              <a class="button button-github" href="https://github.com/PurpleAxolotls" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/github.svg" alt="GitHub Logo">GitHub</a>
-
-              <!-- FTCScout -->
-              <a class="button button-ftcscout" href="https://ftcscout.org/teams/18699" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-website.svg" alt="FTCScout Icon">FTCScout</a>
-
-              <!-- Mail Student Leadership -->
-              <a class="button button-default" href="mailto:18699@purpleaxolotls.com" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Mail Student Leadership</a>
-
-              <!-- Mail Adult Leadership (Mrs. Boutin) -->
-              <a class="button button-default" href="mailto:boutink@leonschools.net" target="_blank" rel="noopener"><img class="icon" aria-hidden="true" src="images/icons/generic-email.svg" alt="Email Icon">Mail Adult Leadership</a>
-
+      <nav class="group" aria-labelledby="follow">
+        <h2 class="eyebrow" id="follow">Follow us</h2>
+        <ul class="list">
+          <!-- Instagram -->
+          <li><a class="row" href="https://www.instagram.com/purpleaxolotls" target="_blank" rel="noopener">
+            <span class="icon" style="--src: url(../images/icons/instagram.svg)" aria-hidden="true"></span>
+            <span class="row__text"><b>Instagram</b><span>@purpleaxolotls</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+          <!-- GitHub -->
+          <li><a class="row" href="https://github.com/PurpleAxolotls" target="_blank" rel="noopener">
+            <span class="icon" style="--src: url(../images/icons/github.svg)" aria-hidden="true"></span>
+            <span class="row__text"><b>GitHub</b><span>github.com/PurpleAxolotls</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+          <!-- FTCScout -->
+          <li><a class="row" href="https://ftcscout.org/teams/18699" target="_blank" rel="noopener">
+            <span class="icon" style="--src: url(../images/icons/generic-website.svg)" aria-hidden="true"></span>
+            <span class="row__text"><b>FTCScout</b><span>Match results for team 18699</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+        </ul>
       </nav>
-      </main>
 
-    </div>
-  </div>
+      <nav class="group" aria-labelledby="contact">
+        <h2 class="eyebrow" id="contact">Get in touch</h2>
+        <ul class="list">
+          <!-- Mail Student Leadership -->
+          <li><a class="row" href="mailto:18699@purpleaxolotls.com">
+            <span class="icon" style="--src: url(../images/icons/generic-email.svg)" aria-hidden="true"></span>
+            <span class="row__text"><b>Mail Student Leadership</b><span>18699@purpleaxolotls.com</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+          <!-- Mail Adult Leadership (Mrs. Boutin) -->
+          <li><a class="row" href="mailto:boutink@leonschools.net">
+            <span class="icon" style="--src: url(../images/icons/generic-email.svg)" aria-hidden="true"></span>
+            <span class="row__text"><b>Mail Adult Leadership</b><span>boutink@leonschools.net</span></span>
+            <span class="go" aria-hidden="true">→</span>
+          </a></li>
+        </ul>
+      </nav>
 
-</body>
+    </main>
+
+    <footer class="foot">
+      <div class="wrap">
+        <span class="foot__word">PURPLEAXOLOTLS</span>
+        <span>FTC Team 18699, Lincoln High School</span>
+      </div>
+    </footer>
+
+  </body>
 
 </html>
